@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.main{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+  
+}
+.home{
+    width: 100%;
+    height: 99vh;
+    border: 2px solid red;
+}
+.banner1{
+    width: 100%;
+    height: 140vh;
+    border: 2px solid blue;
+}
+
+.banner2{
+    width: 100%;
+    height: 170vh;
+    border: 2px solid blueviolet;
+
+}
+.banner3{
+    width: 100%;
+    height: 140vh;
+    border: 2px solid burlywood;
+
+}
+
+.banner4{
+    width: 100%;
+    height: 110vh;
+    border: 2px solid orange;
+}
+
+.banner5{
+    width: 100%;
+    height: 120vh;
+    border: 2px solid purple;
+}
+.banner6{
+    width: 100%;
+    height: 150vh;
+    border: 2px solid plum;
+}
+.banner7{
+    width: 100%;
+    height: 160vh;
+    border: 2px solid orangered;
+}
+
+.banner8{
+    width: 100%;
+    height: 120vh;
+    border: 3px solid #070707;
+   
+}
+.banner9{
+    width: 100%;
+    height: 120vh;
+    border: 3px solid red;
+   
+}
