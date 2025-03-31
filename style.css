@@ -13,19 +13,21 @@
 .home{
     width: 100%;
     height: 99vh;
-    border: 2px solid red;
+    border: 4px solid red;
 }
 /* .home style. */
 
 .navbar {
+    width: 100%;
+    height: 200px;
+    border: 1px solid red;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 50px; */
     background: transparent;
     z-index: 100; /* Increased z-index */
 }
