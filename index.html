@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GreateSouthSite</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,14 +15,16 @@
             <nav class="navbar">
               <div class="navbar-container">
                   <div class="logo">
-                      <img src="./images/logo.png" alt="Cardan Auto Repair Logo">
+                      <!-- <img src="./images/logo.png" alt="Cardan Auto Repair Logo"> -->
                   </div>
-                  <ul class="nav-links">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Contact</a></li>
-                  </ul>
+                  <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
               </div>
           </nav>
       </header>
@@ -39,7 +42,11 @@
   
       <!-- swippers begin -->
       <swiper-container class="mySwiper" navigation="true">
-        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>
+          <div>
+            <img src="images/work.jpg">
+        </div>
+      </swiper-slide>
         <swiper-slide>Slide 2</swiper-slide>
         <swiper-slide>Slide 3</swiper-slide>
         <swiper-slide>Slide 4</swiper-slide>
@@ -93,7 +100,47 @@
 
         <div class="banner3">Gia</div>
         <div class="banner4">Elvie</div>
-        <div class="banner5">Austin</div>
+        <div class="banner5">
+          <h1 id="heade">Great South Autobody</h1>
+            
+            <hr id="line2">
+            <div class="contact">
+                <form method="post" class="contact-form">
+                    <h1>Contact Us</h1>
+                    <hr>
+                    <p>Fill out the form below and we will get back to you as soon as possible.</p>
+                    <label for="Firstname" class="label-color">First Name</label>
+                    <input type="text" name="Firstname" required> 
+                    <label for="Lastname" class="label-color">Last Name</label>
+                    <input type="text" name="Lastname" required>
+                    <label for="Email" class="label-color">Email</label>
+                    <input type="email" name="Email" required>
+                    <label for="Message" class="label-color">Message</label>
+                    <input type="text" name="Message" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="read-our-facts">
+
+                <div class="facts">
+                    <h1>Facts About Us</h1>
+                    <div class="fact-card">
+                        <h2>Fact 1</h2>
+                        <p>Great South Autobody is a family-owned business that has been operating for over 30 years. We are a proud member of the Retail Motor Industry Organisation (RMI) and the Motor Industry Workshop Association (MIWA).</p>
+                    </div>
+                    <div class="fact-card">
+                        <h2>Fact 2</h2>
+                        <p>Our team of highly skilled technicians are trained to work on all makes and models of vehicles. We use the latest diagnostic equipment and tools to ensure that your vehicle is repaired to the highest standard.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h2>Fact 3</h2>
+                        <p>Great South Autobody offers a wide range of services, including panel beating, spray painting, mechanical repairs, and auto electrical repairs. We also offer a 24-hour towing service for your convenience.</p>
+                    </div>
+                </div>    
+            </div>
+            
+        </div>
+        </div>
         <div class="banner6">Gia(Read Our FAQ’s)</div>
         <div class="banner7">Elvie</div>
         <div class="banner8">Austin</div>
