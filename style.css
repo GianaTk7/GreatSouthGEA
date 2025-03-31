@@ -15,86 +15,45 @@
     height: 99vh;
     border: 2px solid red;
 }
-/* Home page code starts here*/
-/* Navbar */
+/* .home style. */
+
 .navbar {
-    width: 100%;
-    height: 130px;
-    border: 3px solid green;
-    display: flex;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 15px 20px;
-    z-index: 10;
-}
-
-.navbar-container {
     width: 100%;
-    height: 110px;
-    border: 2px solid blue;
     display: flex;
-}
-.nav-links-container{
-    width: 60%;
-    height: 110px;
-    border: 2px solid blueviolet;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+    z-index: 100; /* Increased z-index */
 }
 
 .logo {
-    width: 300px;
-    height: 90px;
-    border: 1px solid red;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-
 .nav-links {
     list-style: none;
-    padding: 0;
     display: flex;
-    gap: 20px;
 }
-
 .nav-links li {
-    display: inline;
-    padding-top: 50px;
+    margin: 0 15px;
 }
-
 .nav-links a {
-    color: white;
     text-decoration: none;
-    font-size: 30px;
-    padding-top: 50px;
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 80vh;
-    background: url('images/work.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds visibility */
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 5px;
+.nav-links a:hover {
+    color: orange;
 }
-
-.hero h1 {
-    font-size: 42px;
-    font-weight: bold;
-}
-
-.hero h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
 
 /* Swiper Slider */
 swiper-container {
@@ -102,24 +61,68 @@ swiper-container {
     height: 100%;
   }
 
-  swiper-slide {
+  /* swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   swiper-slide img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 .mySwiper img{
     width: 100%;
     height: 100%;
-    object-fit: cover;  
+    object-fit: cover; 
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    padding: 20px;
+    z-index: 10;
+}
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-orange {
+    background-color: orange;
+}
+.btn-orange:hover {
+    background-color: darkorange;
+}
+.btn-white {
+    background-color: white;
+    color: black;
+}
+.btn-white:hover {
+    background-color: lightgray;
 }
 
 
@@ -265,7 +268,7 @@ span{
 
 hr{
     width: 70%;
-    margin: 30px auto;
+    /* margin: 30px auto; */
     height: 1px;
     color:  #ffffff;
 }
