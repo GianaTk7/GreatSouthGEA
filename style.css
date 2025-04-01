@@ -18,7 +18,7 @@
 .navbar {
   width: 100%;
   height: 140px;
-  border: 4px solid blue;
+  border: 4px solid white;
   position: absolute;
   display: flex;
   background: transparent;
@@ -27,29 +27,39 @@
 
 .logo__div {
   width: 30%;
-  height: 100px;
+  height: 130px;
   border: 1px solid blue;
 }
 .nav-links-div {
   width: 70%;
-  height: 100px;
-  border: 1px solid green;
+  height: 130px;
+  border: 3px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  transition: 0.3s;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds visibility */
+.nav-link {
+  margin-right: 20px;  
 }
 
-.nav-links a:hover {
-  color: orange;
+.nav-link a {
+  color: white; 
+  font-size: 30px;  
+  transition: 0.3s; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  text-decoration: none;
 }
+.nav-link a:hover {
+  color: #fd6b1c; 
+}
+.nav-link.service-link a {
+  color: #fd6b1c; 
+}
+.nav-link.service-link a:hover {
+  color: #fd6b1c;  
+}
+
 
 /* Swiper Slider */
 swiper-container {
@@ -85,67 +95,124 @@ swiper-slide img {
 .contact-info h1 {
   font-size: 28px;
   font-weight: 400;
-  padding: 0 10px 0 18px;
+  padding: 10px 10px 0 22px;
 }
 .contact-info p {
-  padding: 40px 100px 0 0;
+  padding: 45px 80px 0 0;
   font-size: 4rem;
   font-weight: 700;
 }
 .home_style__div{
     width: 70%;
     height: 120px;
-    border:2px solid blue;
+    /* border:2px solid blue; */
     display: flex;
     margin: auto;
-    margin: 107px 0 0 210px;
+    margin: 83px 0 0 210px;
     
 }
 .learnmore_button{
-    width: 235px;
-    height: 85px;
-    border: 2px solid blue;
+    width: 240px;
+    height: 83px;
+    border: 2px solid white;
     background-color: #fd6b1c;
     display: flex;
+    border-radius: 10px;
 }
 .learnmore_button2{
-    width: 235px;
-    height: 85px;
-    border: 2px solid blue;
+    width: 240px;
+    height: 83px;
+    border: 4px solid white;
+    background-color: transparent;
     margin-left: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+.learnmore_button2:hover{
+    background-color: #013e64;
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px;
 }
 .button_text{
     text-decoration: none;
     font-size: 20px;
-    padding: 30px 0 0 0;
-
+    padding: 30px 0 0 31px;
+    
 }
 
+/* swiper 2 context*/
+.swipper-img {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid red;
+}
+.contact-info2 {
+  width: 50%;
+  height: 490px;
+  border: 5px solid white;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.contact-info2 h1{
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+.contact-info2 p{
+font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding-top: 32px ;
+}
+.home_style__div2{
+  width: 70%;
+  height: 120px;
+  border:2px solid blue;
+  display: flex;
+  margin: auto;
+  margin: 20px 0 30px  0;
+  
+}
+.learnmore_button3{
+    width: 240px;
+    height: 83px;
+    /* border: 2px solid white; */
+    color: white;
+    background-color: #fd6b1c;
+    border-radius: 10px;
+    font-weight: 700;
+    display: flex;
+    margin-top: 10px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+}
+.learnmore_button4{
+    width: 240px;
+    height: 83px;
+    border: 4px solid white;
+    background-color: white;
+    font-weight: 700;
+    margin: 10px 0 0 15px;
+    display: flex;
+    border-radius: 10px;
+}
+.learnmore_button3:hover{
+    background-color: #eb6b26;
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.learnmore_button4:hover{
+    background-color: #fd6b1c;
+    color: white;
+    transition: 0.3s;
+    border: none;
+}
+/* home page ends here. */
 
 .banner1 {
   width: 100%;
@@ -281,19 +348,136 @@ span {
   justify-content: center;
   text-align: center;
 }
-
-hr {
-  width: 70%;
-  /* margin: 30px auto; */
-  height: 1px;
-  color: #ffffff;
+/* home screen lines divider */
+.divider {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
+.line {
+  width: 40px;
+  height: 5px;
+  background: blue;
+}
+
+.small-line {
+  width: 20px;
+  height: 5px;
+  background: blue;
+}
+
+
+/* banner 3 context */
 .banner3 {
   width: 100%;
   height: 140vh;
-  border: 2px solid burlywood;
+  /* border: 2px solid burlywood; */
 }
+.A_take_over_section{
+  width: 100%;
+  height: 45vh;
+  border: 3px solid blueviolet;
+  
+}
+.service-section_work {
+    width: 65%;
+    height: 600px;
+    /* border: 5px solid black; */
+    margin-left:110px ;
+    margin-top: 40px;
+    position: relative;
+    
+}
+#work_hours_header{
+    font-size: 60px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+/* Background Image */
+.image_container_overlap_by_div {
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid blue; */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 0; 
+}
+
+.image_container_overlap_by_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Foreground Content */
+.content_box_work_descriptions {
+  width: 50%; 
+  height: 410px;
+  background-color: white;
+  /* border: 2px solid blue; */
+  position: absolute;
+  top: 10%;
+  left: 78%; 
+  padding: 20px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+
+.content_box_work_descriptions h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-list {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+.service-list li {
+  margin-bottom: 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .banner4 {
   width: 100%;
