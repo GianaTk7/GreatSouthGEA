@@ -328,12 +328,7 @@ hr{
     border: 2px solid orangered;
 }
 
-.banner8{
-    width: 100%;
-    height: 120vh;
-    border: 3px solid #070707;
-   
-}
+
 .banner9{
     width: 100%;
     height: 120vh;
@@ -504,56 +499,220 @@ h1{
     padding-top: 25px;
 }
 
+/* Approvals Section Styling */
 
 
+.section-title {
+    font-size: 30px;
+    font-weight: 200;
+    color: black;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.banner-approve {
+    width: 100%;
+    background-color: #ffffff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
 
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.approvals-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.brand-logo {
+    height: 60px;
+    filter: brightness(1.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+.alliances {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px auto;
+}
+.alliances-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.alliances-logo {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.alliances-logo:hover {
+    transform: translateY(-5px);
+}
 
 /* The styling for the footer section */
 
-footer {
-    background-color: #013e64;
+/* Footer Styling */
+.banner8 {
+    width: 100%;
+    background-color: #001a2e;
+    height: 97vh;
     color: white;
-    padding: 40px 20px;
-}
-.container5 {
+  }
+  
+  footer {
+    padding: 60px 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 100px auto;
-}
-.footer-section {
-    width: 23%;
+    margin-bottom: 40px;
+  }
+  
+  .footer-logo-section {
+    width: 25%;
+    padding-right: 30px;
+  }
+  
+  .footer-logo {
+    max-width: 160px;
     margin-bottom: 20px;
-}
-.footer-section h4 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-}
-.footer-section ul {
+  }
+  
+  .footer-description {
+    color: #a0a0a0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  
+  .footer-columns {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 0 1 20%;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-column h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #4da6cb;
+  }
+  
+  .footer-column ul {
     list-style: none;
     padding: 0;
-}
-.footer-section ul li {
-    margin: 10px 0;
-}
-.social-links a {
-    display: inline-block;
-    margin-right: 10px;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 12px;
+    color: #a0a0a0;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li:hover {
+    color: #4da6cb;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    color: #a0a0a0;
+  }
+  
+  .contact-label {
     color: white;
-    text-decoration: none;
-}
-.copyright {
-    text-align: center;
+    font-weight: 500;
     margin-top: 20px;
-}
-
-.footer-logo{
-    height: 200px;
-    width: 200px;
-    margin-left: 560px;
-}
+    margin-bottom: 5px;
+  }
+  
+  .contact-label:first-child {
+    margin-top: 0;
+  }
+  
+  .contact-detail {
+    margin: 3px 0;
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  
+  @media (max-width: 992px) {
+    .footer-logo-section {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    
+    .footer-columns {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+    }
+    
+    .footer-column {
+      margin-bottom: 30px;
+    }
+  }
 
 .label-color{
     color: #ffffff;
