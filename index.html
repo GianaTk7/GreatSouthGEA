@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./stylesheet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>GreateSouthSite</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="main">
-        <div class="home">
-            gia
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./stylesheet.css" />
+  <title>GreateSouthSite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="home">
+      <!-- Burger Menu (on the right side) -->
+      <div class="burger-menu" onclick="toggleNav()">
+        &#9776;
+      </div>
+
+      <!-- Side Navbar -->
+
+      <div id="sideNavbar" class="side-navbar">
+        <div class="side_nav_logo">
+          <img src="Images/logoblue.jpg" style="width: 170px; margin-left: 50px" alt="">
         </div>
+        <div class="close-btn" onclick="toggleNav()">&times;</div>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Pages</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Horizontal Navbar -->
+      <div class="navbar">
+        <div class="logo__div">
+          <img src="Images/logoblue.jpg" alt="Logo" height="120px" width="50%">
         <div class="banner1">
             <div class="container">
                 <div class="left-section">
@@ -91,60 +114,60 @@
           <div class="section-title">
             <h1>Great South Autobody</h1>
         </div>
-        <img src="./Images/logo.gif" alt="logo.png" height="300px" width="300px" class="logo">
-        <span>Fixing Any Kind Of Vehicles At Great South Autobody</span>
-        <div class="car-container">
-            <div class="car-card">
-                <img src="./Images/fix1.jpg" alt="Luxury Car" class="car-image">
-                
-                
-            </div>
-            <div class="car-card">
-                <img src="./Images/fix2.jpg" alt="SUVs & Pickups" class="car-image">
-                
-                
-            </div>
-            <div class="car-card">
-                <img src="./Images/fix3.jpg" alt="Sports Car" class="car-image">
-                
-                
-            </div>
-            <div class="car-card">
-                <img src="./Images/fix4.jpg" alt="Minivan" class="car-image">
-                
-                
-            </div>
-            <div class="car-card">
-                <img src="./Images/fix.jpg" alt="SUVs & Pickups" class="car-image">
-                
-                
-            </div>
-    </div>
-    <hr>
-    <div class="schedule-section">
-        <div class="contact-banner">
-            <h2>Schedule Our Expert Visit Or Get A Quote</h2>
+        <div class="nav-links-div">
+          <div class="nav-link"><a href="#">Home</a></div>
+          <div class="nav-link"><a href="#">About Us</a></div>
+          <div class="nav-link service-link"><a href="#">Services</a></div>
+          <div class="nav-link"><a href="#">Page</a></div>
+          <div class="nav-link"><a href="#">News</a></div>
+          <div class="nav-link"><a href="#">Contact</a></div>
+        </div>
+      </div>
+      <!-- First Swiper -->
+      <swiper-container class="mySwiper" navigation="true">
+        <swiper-slide>
+          <div class="swipper-img">
+            <img src="images/work.jpg" />
             <div class="contact-info">
-                <div class="info-box"> 
-                    <div>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <p class="label">Schedule a Visit</p>
-                        <p class="info-text">(011) 493 3695/6</p>
-                        <p class="info-text">24-hour contact number – 083 266 5398</p>
-                        <p class="info-text">for whatsapp or sms enquiries – 076 222 9453</p>
-                    </div>
+              <h1>We’re Leaders in Auto Repair, Maintenance & Inspection</h1>
+              <p>
+                Your One-Stop Solution For<br />
+                All Auto Repair Needs
+              </p>
+              <div class="divider">
+                <hr class="line">
+                <hr class="small-line">
+                <hr class="line">
+              </div>
+              <!-- home screen two buttons -->
+              <div class="home_style__div">
+                <div class="learnmore_button">
+                  <a class="button_text">LEARN MORE</a>
                 </div>
-                <div class="divider"></div>
-                <div class="info-box">
-                    <div>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <p class="label">Need Help? Send us Email</p>
-                        <p class="info-text">mark@greatsouth.co.za</p>
-                        <p class="info-text">info@greatsouth.co.za</p>
-
-                    </div>
+                <div class="learnmore_button2">
+                  <a class="button_text">FREE ESTIMATE</a>
                 </div>
+              </div>
             </div>
+          </div>
+        </swiper-slide>
+        <!-- swipper 2 context -->
+        <swiper-slide>
+          <div class="swipper-img">
+            <img src="images/work2.jpg" />
+            <div class="contact-info2">
+              <h1>Welcome to Service <br> Excellence</h1>
+              <p>Great South Autobody (GSA) provides vehicle repairs, from structural fixes to paint refinishing. Using
+                advanced technology<br> and skilled staff, we offer lifetime-guaranteed paintwork at industry-standard
+                prices.</p>
+              <div class="home_style__div2">
+                <div class="learnmore_button3">
+                  <a class="button_text">LEARN MORE</a>
+                </div>
+                <div class="learnmore_button4">
+                  <a class="button_text">FREE ESTIMATE</a>
+                </div>
+              </div>
         </div>
     </div>
         </div>
@@ -216,7 +239,12 @@
                     <button type="submit">Submit</button>
                 </form>
             </div>
-            <div class="read-our-facts">
+          </div>
+        </swiper-slide>
+      </swiper-container>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 
                 <div class="facts">
                     <h1>Facts About Us</h1>
@@ -272,5 +300,107 @@
         <div class="banner8">Austin</div>
         <div class="banner9">footer</div>
     </div>
-  </body>
+
+    <!-- JavaScript -->
+    <script>
+      function toggleNav() {
+        document.getElementById("sideNavbar").classList.toggle("active");
+      }
+    </script>
+
+
+    <div class="banner1">Elvie</div>
+    <div class="banner2">Austin</div>
+
+    <div class="banner3">
+      <div class="A_take_over_section">
+        Austin take over
+      </div>
+      <h1 id="work_hours_header">Wide Range of Service</h1>
+      <div class="service-section_work">
+        <!-- Background Image -->
+        <div class="image_container_overlap_by_div">
+          <img src="Images/img-1.jpg">
+        </div>
+
+        <!-- Foreground Content -->
+        <div class="content_box_work_descriptions">
+          <h3>24-Hour Nationwide Towing Service</h3>
+          <ul class="service-list">
+            <li>24-hour emergency / breakdown contact number</li>
+            <li>Drive out quotations</li>
+            <li>World-class Audatex quoting system</li>
+            <li>Courtesy cars available for the period of repair</li>
+            <li>Client collection and drop-off service</li>
+            <li>Overnight vehicle storage with full, 24-hour security and CCTV surveillance</li>
+            <li>Comprehensive, dedicated telephonic and SMS updates, support, and assistance</li>
+            <li>12 months guarantee on parts as per manufacturer standards</li>
+            <li>36-month guarantee on workmanship</li>
+            <li>Lifetime warranty on paintwork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Gia--- banner3 ends here -->
+    <div class="banner4">Elvie</div>
+    <div class="banner5">Austin</div>
+
+    <div class="banner6">
+      <div class="container">
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h3>GreatSouth's General FAQ’s</h3>
+          <h2>Read Our FAQ’s</h2>
+          <div class="underline"></div>
+
+          <h4>• How should I prepare my car for a road trip?</h4>
+          <p>
+            Tempor incididunt labor sed dolore magna sed aliqua enim ad minim veniam
+            quis nostrud exercitation ullamco laboris sed ipsum.
+          </p>
+          <div class="faq-line"></div>
+
+          <h4>• How do I know when my car needs a tune-up?</h4>
+          <div class="faq-line"></div>
+
+          <h4>• What is the primary cause of tire damage?</h4>
+          <div class="faq-line"></div>
+
+          <h4>• Car is under warranty, can I still bring my car to the workshop?</h4>
+          <div class="faq-line"></div>
+
+          <h4>• Why should you use GreatSouth AutoCare Garage?</h4>
+          <div class="faq-line"></div>
+        </div>
+
+        <!-- Appointment Form Section -->
+        <div class="form-section">
+          <h3>Get a Free Quote From GreatSouth</h3>
+          <h2>Request Appointment.</h2>
+          <div class="underline"></div>
+
+          <form>
+            <div class="input-group">
+              <input type="text" placeholder="First Name">
+              <input type="text" placeholder="Last Name">
+            </div>
+            <div class="input-group">
+              <input type="email" placeholder="Email">
+              <input type="tel" placeholder="Phone">
+            </div>
+            <select>
+              <option>Vehicle Make / Model</option>
+            </select>
+            <textarea placeholder="Message / Service Requested"></textarea>
+            <button type="submit">SEND MESSAGE →</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="banner7">Elvie</div>
+      <div class="banner8">Austin</div>
+      <div class="banner9">footer</div>
+    </div>
+</body>
+
 </html>
