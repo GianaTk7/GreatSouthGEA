@@ -8,11 +8,25 @@
   height: 100%;
   /* border: 2px solid black; */
 }
+<<<<<<< HEAD
 .home {
   width: 100%;
   height: 99vh;
   /* border: 4px solid red; */
   background-color: rgba(0, 0, 0, 0.3);
+=======
+.home{
+    width: 100%;
+    height: 99vh;
+    border: 2px solid red;
+}
+.banner1{
+    width: 100%;
+    height: 140vh;
+    /* border: 2px solid blue; */
+    background-color: #f3f3f3;
+    min-height: 100vh;
+>>>>>>> master
 }
 
 .swipper-img {
@@ -450,6 +464,7 @@ span {
   background: blue;
 }
 
+<<<<<<< HEAD
 /* banner 3 context */
 .banner3 {
   width: 100%;
@@ -488,6 +503,31 @@ span {
   top: 0;
   left: 0;
   z-index: 0;
+=======
+.banner4{
+    width: 100%;
+    height: 110vh;
+    border: 2px solid orange;
+    /* border: 2px solid orange; */
+    padding: 0;
+    margin: 0;
+}
+
+.banner5{
+    width: 100%;
+    height: 120vh;
+    border: 2px solid purple;
+}
+.banner6{
+    width: 100%;
+    height: 150vh;
+    border: 2px solid plum;
+}
+.banner7{
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid orangered; */
+>>>>>>> master
 }
 
 .image_container_overlap_by_div img {
@@ -707,3 +747,271 @@ button:hover {
   height: 120vh;
   border: 3px solid red;
 }
+<<<<<<< HEAD
+=======
+.banner9{
+    width: 100%;
+    height: 120vh;
+    border: 3px solid red;
+   
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 70%;
+    margin-bottom: 9%;
+    padding: 30px;
+}
+
+.left-section {
+    position: relative;
+    width: 40%;
+    background-color: #2196F3;
+}
+
+.technician-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -26px;
+    left: 40px;
+    background-color: #FF5722;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    height: 20vh;
+    width: 30vw;
+}
+
+.experience-badge .years {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.experience-badge .label {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.right-section {
+    width: 60%;
+    padding: 40px 30px;
+    background-color: white;
+    background-color: #f4f4f4;
+}
+
+.section-title {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.service-text h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.service-text p {
+    color: #666;
+    font-size: 14px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #F5F5F5; */
+    padding: 25px;
+    /* border-radius: 10px; */
+    /* margin: 90px; */
+    /* height: 4vh !important; */
+    border-top: 0.2px solid #efefef;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5722;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.auto-repair-page {
+display: flex;
+max-width:100%;
+margin: 0 auto;
+background-color: #00334e;
+color: white;
+height: 100%;
+}
+
+.page-details {
+width: 60%;
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.page-visual {
+width: 40%;
+position: relative;
+}
+
+.page-visual img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.video-trigger {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #ff6b00;
+color: white;
+border-radius: 50%;
+width: 80px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.video-trigger::before {
+content: '▶';
+font-size: 30px;
+}
+
+.page-title {
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.page-description {
+margin-bottom: 30px;
+line-height: 1.6;
+}
+
+.service-list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.service-item {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.service-badge {
+width: 50px;
+height: 50px;
+background-color: #ff6b00;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+}
+
+.service-badge img {
+width: 30px;
+height: 30px;
+}
+
+.service-details h3 {
+margin-bottom: 5px;
+}
+
+.technicians-section {
+    padding: 50px;
+    background: #fff;
+}
+.technicians-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+.technician-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+.technician-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.appointment-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #ff6600;
+    border-radius: 5px;
+}
+.appointment-btn:hover {
+    background: #cc5200;
+}
+>>>>>>> master
